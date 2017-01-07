@@ -1,8 +1,12 @@
 {
-  "name": "goto-server",
+  "name": "goto",
   "version": "1.0.0",
-  "description": "URL Shortening service using MEAN stack",
-  "main": "gotoserver.js",
+  "description": "URL Shortening service using the MEAN stack",
+  "main": "/server/gotoserver.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
