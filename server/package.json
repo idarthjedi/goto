@@ -1,0 +1,19 @@
+{
+  "name": "goto-server",
+  "version": "1.0.0",
+  "description": "URL Shortening service using MEAN stack",
+  "main": "gotoserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idarthjedi/goto.git"
+  },
+  "author": "Jediah Logiodice",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/idarthjedi/goto/issues"
+  },
+  "homepage": "https://github.com/idarthjedi/goto#readme"
+}
