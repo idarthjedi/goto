@@ -1,3 +1,6 @@
+var dataConnector = require('../helpers/dataConnector');
+
+
 module.exports = {
     index: function(req, res) {
         //within this function we will look up a short-link from the mongodb,
@@ -9,7 +12,10 @@ module.exports = {
         {
 
             case '/undefined':
-                res.render('edit');
+                var viewModel = {};
+                dataConnector(viewModel, function(viewModel){
+                    res.render('edit', viewModel);
+                });
                 break;
             default:
                 res.redirect(redirectPath);

@@ -11,7 +11,7 @@
                        for="name">Short Name:</label>
                 <div class="col-md-10">
                     <input class="form-control" type="text"
-                           name="name">
+                           name="name" value="{{ dataModel.url.name }}"/>
                 </div>
             </div>
             <div class="form-group col-md-12">
@@ -19,7 +19,7 @@
                        for="url_id">URL:</label>
                 <div class="col-md-10">
                     <input class="form-control" type="text"
-                           name="url_id">
+                           name="url_id" value="{{ dataModel.url.url_id }}"/>
                 </div>
             </div>
             <div class="form-group col-md-12">
@@ -27,7 +27,8 @@
                        for="description">Description:</label>
                 <div class="col-md-10">
                     <textarea class="form-control"
-                              name="description" rows="2"></textarea>
+                              name="description" rows="2">{{ dataModel.url.description }}
+                    </textarea>
                 </div>
             </div>
             <div class="form-group col-md-12">
@@ -41,16 +42,20 @@
         </div>
     </form>
 </div>
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <h3 class="panel-title">
-            Your URLs
-        </h3>
-    </div>
-    <div class="panel-body">
-        {{#each urls}}
-        <div class="col-md-4 text-center" style="padding-bottom:1em;"><a href="/edit/{{ uniqueId }}">{{ name }}</a>: {{ url_id }}
-        </div>
-        {{/each}}
-    </div>
-</div>
+<!--<div class="panel panel-default">-->
+    <!--<div class="panel-heading">-->
+        <!--<h3 class="panel-title">-->
+            <!--Your URLs-->
+        <!--</h3>-->
+    <!--</div>-->
+    <!--<div class="panel-body">-->
+        <!--&lt;!&ndash; In the future, we will pull the list using Angular and a NodeJS Service //&ndash;&gt;-->
+
+        <!--Holding place for your URLs (to be implemented in Angular in the future).-->
+        <!--{{#each urls}}-->
+        <!--<div class="col-md-4 text-center" style="padding-bottom:1em;"><a href="/edit/{{ uniqueId }}">{{ name }}</a>: {{ url_id }}-->
+        <!--</div>-->
+        <!--{{/each}}-->
+    <!--</div>-->
+
+<!--</div>-->
