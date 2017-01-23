@@ -1,0 +1,5 @@
+NOTE: A lot more README coming in the future.  For now, the primary note is to realize that you must
+rename vars.sample.js in /server to vars.js for the application to run.
+
+The vars.js is a local file that will hold local information that will not be pushed to GIT (such as local UID/PWD)
+for the monogdb, etc.
